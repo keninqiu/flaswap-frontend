@@ -50,16 +50,19 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
             label: t('Swap'),
             href: '/swap',
           },
+          /*
           {
             label: t('Limit'),
             href: '/limit-orders',
             supportChainIds: [ChainId.BSC],
             image: '/images/decorations/3d-coin.png',
           },
+          */
           {
             label: t('Liquidity'),
             href: '/liquidity',
           },
+          /*
           {
             label: t('Perpetual'),
             href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
@@ -67,12 +70,10 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
             )}`,
             type: DropdownMenuItemType.EXTERNAL_LINK,
           },
-          // {
-          //   label: t('Transfer'),
-          //   href: '/transfer',
-          // },
+          */
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
+      /*
       {
         label: t('Earn'),
         href: '/farms',
@@ -143,6 +144,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
           },
         ],
       },
+      */
       {
         label: '',
         href: '/info',
@@ -154,6 +156,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
             href: '/info',
             supportChainIds: [ChainId.BSC],
           },
+          /*
           {
             label: t('IFO'),
             href: '/ifo',
@@ -188,6 +191,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
             href: 'https://docs.pancakeswap.finance',
             type: DropdownMenuItemType.EXTERNAL_LINK,
           },
+          */
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
     ].map((item) => addMenuItemSupported(item, chainId))
